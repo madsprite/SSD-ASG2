@@ -25,7 +25,7 @@ SECRET_KEY = 'su7$$n05l*=1_x6$lcs(xj3juf4cl&8=_c!(-64*(-7!lf!-9+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ssd.madsprite.me']
 
 
 # Application definition
