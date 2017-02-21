@@ -20,12 +20,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*lh4125m*h9fy858^z$+!c45=n_&wvw5re6pbsj0qk1a5xk$^w'
+SECRET_KEY = 'su7$$n05l*=1_x6$lcs(xj3juf4cl&8=_c!(-64*(-7!lf!-9+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ssd.madsprite.me']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -76,10 +76,10 @@ WSGI_APPLICATION = 'ssdassign2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ssdassign2',
-	'USER':	'ssdassign2',
-	'PASSWORD': 'securepassword',
-	'HOST':	'localhost',
+        'NAME': 'ssd',
+	'USER': 'ssdassign2user',
+	'PASSWORD': 'ssdss',
+	'HOST': 'localhost',
 	'PORT': '',
     }
 }

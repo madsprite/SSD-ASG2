@@ -36,7 +36,7 @@ end
 # Unset irrelevant variables.
 deactivate nondestructive
 
-set -gx VIRTUAL_ENV "/root/ssdassign2/ssdassign2env"
+set -gx VIRTUAL_ENV "/home/madsprite/Textbooks/Sem 6 2017/Secure Development/Assignment 2/SSD-ASG2/ssdassign2env"
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
