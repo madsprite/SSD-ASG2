@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'ssdassign2.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'ssd',
-	'USER': 'ssdassign2user',
-	'PASSWORD': 'ssdss',
+        'NAME': 'ssdassign2',
+	'USER': 'ssdassign2',
+	'PASSWORD': 'securepassword',
 	'HOST': 'localhost',
 	'PORT': '',
     }
