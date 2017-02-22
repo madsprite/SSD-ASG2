@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from ssdassign2 import views as ssdassign2_views
+from django.contrib.auth import views as auth_views
 
 urlpatterns = [
     url(r'^$', ssdassign2_views.index),
     url(r'^about/$', ssdassign2_views.about),
     url(r'^admin/', admin.site.urls),
+    url(r'^login/$', auth_views.login, name='login'),
+    url(r'^logout/$', auth_views.logout, name='logout'),
 ]
