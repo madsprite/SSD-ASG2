@@ -20,7 +20,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/1.10/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '*lh4125m*h9fy858^z$+!c45=n_&wvw5re6pbsj0qk1a5xk$^w'
+SECRET_KEY = 'su7$$n05l*=1_x6$lcs(xj3juf4cl&8=_c!(-64*(-7!lf!-9+'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -54,7 +54,7 @@ ROOT_URLCONF = 'ssdassign2.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [BASE_DIR + '/templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -77,9 +77,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'ssdassign2',
-	'USER':	'ssdassign2',
+	'USER': 'ssdassign2',
 	'PASSWORD': 'securepassword',
-	'HOST':	'localhost',
+	'HOST': 'localhost',
 	'PORT': '',
     }
 }
@@ -122,4 +122,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.10/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
+STATICFILES_DIRS = [
+    BASE_DIR + "/static/",
+]

@@ -7,7 +7,7 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
-setenv VIRTUAL_ENV "/root/ssdassign2/ssdassign2env"
+setenv VIRTUAL_ENV "/home/madsprite/Textbooks/Sem 6 2017/Secure Development/Assignment 2/SSD-ASG2/ssdassign2env"
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

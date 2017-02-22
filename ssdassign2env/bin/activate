@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/root/ssdassign2/ssdassign2env"
+VIRTUAL_ENV="/home/madsprite/Textbooks/Sem 6 2017/Secure Development/Assignment 2/SSD-ASG2/ssdassign2env"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"
