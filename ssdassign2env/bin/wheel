@@ -1,4 +1,4 @@
-#!"/home/madsprite/Textbooks/Sem 6 2017/Secure Development/Assignment 2/SSD-ASG2/ssdassign2env/bin/python3"
+#!/root/ssdassign2/ssdassign2env/bin/python3
 
 # -*- coding: utf-8 -*-
 import re
