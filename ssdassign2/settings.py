@@ -38,9 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    # The Django sites framework is required
+    # The Django sites framework is required and allauth
     'django.contrib.sites',
-
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
@@ -51,6 +50,8 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.twitter',
     #Personal blog here
     'blog',
+    #django-taggit
+    'taggit',
 ]
 
 MIDDLEWARE = [
