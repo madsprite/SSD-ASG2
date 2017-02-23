@@ -45,12 +45,8 @@ INSTALLED_APPS = [
     'allauth.account',
     'allauth.socialaccount',
     # ... include the providers you want to enable:
-    'allauth.socialaccount.providers.amazon',
-    'allauth.socialaccount.providers.bitbucket',
-    'allauth.socialaccount.providers.bitbucket_oauth2',
     'allauth.socialaccount.providers.facebook',
     'allauth.socialaccount.providers.github',
-    'allauth.socialaccount.providers.gitlab',
     'allauth.socialaccount.providers.google',
     'allauth.socialaccount.providers.twitter',
     #Personal blog here
@@ -84,6 +80,16 @@ TEMPLATES = [
         },
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+
+    # Needed to login by username in Django admin, regardless of `allauth`
+    'django.contrib.auth.backends.ModelBackend',
+
+    # `allauth` specific authentication methods, such as login by e-mail
+    'allauth.account.auth_backends.AuthenticationBackend',
+    
+)
 
 WSGI_APPLICATION = 'ssdassign2.wsgi.application'
 
@@ -121,16 +127,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = (
-    {
-    # Needed to login by username in Django admin, regardless of `allauth`
-    'django.contrib.auth.backends.ModelBackend',
-
-    # `allauth` specific authentication methods, such as login by e-mail
-    'allauth.account.auth_backends.AuthenticationBackend',
-    }
-)
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
@@ -153,4 +149,3 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = [
     BASE_DIR + "/static/",
 ]
-SITE_ID = 1
