@@ -3,6 +3,6 @@ from blog.models import Blog
 
 # Register your models here.
 class BlogAdmin(admin.ModelAdmin):
-    list_display('title',)
+    list_display = ('title',)
 
 admin.site.register(Blog, BlogAdmin)
