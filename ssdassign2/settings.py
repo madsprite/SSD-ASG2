@@ -151,4 +151,4 @@ STATICFILES_DIRS = [
     BASE_DIR + "/static/",
 ]
 
-LOGIN_REDIRECT_URL = '/index.html/'
+LOGIN_REDIRECT_URL = '/'
