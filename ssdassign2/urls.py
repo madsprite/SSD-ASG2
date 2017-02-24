@@ -20,5 +20,9 @@ from ssdassign2 import views as ssdassign2_views
 urlpatterns = [
     url(r'^$', ssdassign2_views.index),
     url(r'^about/$', ssdassign2_views.about),
-    url(r'^admin/', admin.site.urls),
-]
+    url(r'^profile/$', ssdassign2_views.profile),
+    url(r'^profile-edit/$', ssdassign2_views.profile-edit),
+    url(r'^avatar/$', ssdassign2_views.avatar),
+    url(r'^avatar-edit/$', ssdassign2_views.avatar-edit),
+    url(r'^admin/', admin.site.urls)
+]  
