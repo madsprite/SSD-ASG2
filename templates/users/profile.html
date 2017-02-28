@@ -6,7 +6,16 @@
 {% block content %} 
 
 
-
+  <!-- start Profile About  -->
+    <div>
+      <h1>Profile</h1>>
+      	{% for detail in profile_detail %}
+      		<h3> Username: {{ detail.username }} </h3>
+      		<h3> Name: {{ detail.name }} </h3>
+      		<h3> Email: {{ detail.email }} </h3>
+      	{% endfor %}
+    </div>
+  <!-- end Profile About  -->
 
 
 
