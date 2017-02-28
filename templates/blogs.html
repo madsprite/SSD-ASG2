@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+{% load static %}
+{% block title %}Blogs{% endblock %}
+{% block description %}This is the blog page{% endblock %}
+{% block content %}
+	<div class="container">
+	<h2>Test:{{ blogs }} </h2>
+	<h3>Blogs</h3>
+	<hr>
+	<a href="/admin/blog/blog/add">Create new Blog</a>
+	{% for blog in blogs %}
+	<div class="row">
+		<h2>{{ blog.title }}</h2>
+		<p>by: {{ blog.username }}</p>
+		<p><a class="btn btn-default" href="blog/{{ blog.id }}"role="button">view</a></p>
+      	</div>
+	{% endfor %}
+</div>
+{% endblock %}

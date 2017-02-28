@@ -1,4 +1,4 @@
-#!/home/madsprite/Textbooks/Sem 6 2017/Secure Development/Assignment 2/SSD-ASG2/ssdassign2env/bin/python
+#!/root/ssdassign2/ssdassign2env/bin/python
 
 import sys
 import getopt
